@@ -16,14 +16,5 @@ module.exports = {
                 changOrigin: true
             }
         }
-    },
-    css: {
-        loaderOptions: {
-            sass: {
-                data: `
-                    @import "~@/style/index.scss";
-                `,
-            },
-        },
-    },
+    }
 };
