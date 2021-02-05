@@ -1,23 +1,26 @@
 <template>
   <div id="app">
-    <theme></theme>
+    <Layout />
   </div>
 </template>
 
 <script>
-  import theme from '@/components/theme'
+  import Layout from '@/layout';
   export default {
     name: 'app',
     components:{
-      theme
+      Layout
+    },
+    data() {
+      return {
+      }
     }
   }
 </script>
 
 <style lang="scss">
-  #app{
-    width:100%;
-    height:100%;
-    background:var(--bg-color)
+  #app {
+    width: 100%;
+    height: 100%;
   }
 </style>

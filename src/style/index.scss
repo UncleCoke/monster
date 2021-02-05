@@ -1,2 +1,29 @@
-@import  '@/style/reset.scss';
+@import '@/style/reset.scss';
 @import '@/style/element-variables.scss';
+
+/*header*/
+$header-height:50px;
+$header-padding:20px;
+
+/*aside*/
+$aside-width:250px;
+$aside-bg:#f8f8f8;
+
+/*main*/
+$main-bg:#e8e8e8;
+
+
+/*mixin*/
+@mixin flex-center($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-between($direction: row) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: center;
+    justify-content:space-between;
+}
