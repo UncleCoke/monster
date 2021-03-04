@@ -2,17 +2,21 @@
     <div class="layout">
         <Header />
         <div class="body">
-            <div class="aside"></div>
-            <div class="main"></div>
+            <Aside />
+            <Main />
         </div>
     </div>
 </template>
 <script>
     import Header from './header'
+    import Aside from './aside'
+    import Main from './main'
     export default {
-        name: 'layout',
+        name: 'Layout',
         components: {
-            Header
+            Header,
+            Aside,
+            Main
         },
         data() {
             return {
@@ -28,11 +32,6 @@
         .body {
             display: flex;
             height:calc(100% - #{$header-height});
-
-            .aside {
-                width: $aside-width;
-                background: $aside-bg;
-            }
 
             .main {
                 background: $main-bg;
